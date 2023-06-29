@@ -1,7 +1,8 @@
 {
   "name": "caesars-game",
-  "private": true,
-  "version": "0.0.0",
+  "private": false,
+  "version": "1.0.0",
+  "author": "Mihail Gaberov",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -14,6 +15,7 @@
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
+    "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^14.0.0",
     "@types/react": "^18.0.37",
     "@types/react-dom": "^18.0.11",
@@ -25,6 +27,7 @@
     "eslint-plugin-react-refresh": "^0.3.4",
     "sass": "^1.63.6",
     "typescript": "^5.0.2",
-    "vite": "^4.3.9"
+    "vite": "^4.3.9",
+    "vitest": "^0.32.2"
   }
 }
