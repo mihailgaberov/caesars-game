@@ -1,8 +1,11 @@
-# Ceasar's Game
+# Caesar's Game
+
+---
+![Desktop](https://github.com/mihailgaberov/ceasars-game/blob/main/ceasar.jpeg)
 
 * Level 1: Simple scratch card 3x3 (9 in total) fields with numbers. If three numbers in a row, column or diagonal are revealed, their digit will be the Ceasar 's key for the second level. If no sequence is revealed, the player loses his money and a new game opportunity is given.
 
-* Level 2: A key phrase to be used in the third level should be found using the Ceasar's key from the first level. The key phrase will be a simple phrase containing one or two words.
+* Level 2: A key phrase to be used in the third level should be found using the Caesar's key from the first level. The key phrase will be a simple phrase containing one or two words.
 
 * Level 3: The last level of the game. Here the players will be asked to decode a given ciphered text using the key phrase found in level 2. The phrase will be used as a key combined with a defined alphabet for successfully deciphering the encoded text.
 
