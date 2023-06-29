@@ -1,7 +1,7 @@
 # Caesar's Game
 
 ---
-![Desktop](https://github.com/mihailgaberov/ceasars-game/blob/main/ceasar.jpeg)
+![Julius Caesar](https://github.com/mihailgaberov/ceasars-game/blob/main/caesar.jpeg)
 
 * Level 1: Simple scratch card 3x3 (9 in total) fields with numbers. If three numbers in a row, column or diagonal are revealed, their digit will be the Ceasar 's key for the second level. If no sequence is revealed, the player loses his money and a new game opportunity is given.
 
