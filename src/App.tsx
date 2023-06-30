@@ -1,6 +1,7 @@
 import './App.css'
 import { Footer } from './components/Footer'
 import { Header } from './components/Header'
+import { ScratchGame } from './components/ScratchGame'
 
 function App() {
 
@@ -8,7 +9,7 @@ function App() {
     <>
       <Header />
       <main>
-        main game content here...
+        <ScratchGame />
       </main>
     <Footer />
     </>
