@@ -1,16 +1,38 @@
-# Caesar's Game
+# create-svelte
 
----
-![Julius Caesar](https://github.com/mihailgaberov/ceasars-game/blob/main/caesar.jpeg)
+Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
 
-* Level 1: Simple scratch card 3x3 (9 in total) fields with numbers. If three numbers in a row, column or diagonal are revealed, their digit will be the Caesar's key for the second level. If no sequence is revealed, the player loses his money and a new game opportunity is given.
+## Creating a project
 
-* Level 2: A key phrase to be used in the third level should be found using the Caesar's key from the first level. The key phrase will be a simple phrase containing one or two words.
+If you're seeing this, you've probably already done this step. Congrats!
 
-* Level 3: The last level of the game. Here the players will be asked to decode a given ciphered text using the key phrase found in level 2. The phrase will be used as a key combined with a defined alphabet for successfully deciphering the encoded text.
+```bash
+# create a new project in the current directory
+npm create svelte@latest
 
-* Level 4: Winning screen - this will be the screen that the player will see when successfully decode the ciphered text in level 4. Here will be the same text in plain English, the player results - played cards, balance, etc., and some other gamification elements.
+# create a new project in my-app
+npm create svelte@latest my-app
+```
 
-The digits in the scratch card will be roman - from one to nine.
+## Developing
 
-Think about Wheel of Luck! To add it after each level as another reward to the player, more virtual money for example, for purchasing new cards.
+Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+
+```bash
+npm run dev
+
+# or start the server and open the app in a new browser tab
+npm run dev -- --open
+```
+
+## Building
+
+To create a production version of your app:
+
+```bash
+npm run build
+```
+
+You can preview the production build with `npm run preview`.
+
+> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
