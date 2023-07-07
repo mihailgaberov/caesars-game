@@ -69,7 +69,7 @@
   </div>
   
   <div id="debug" class="debug"></div>
-<style>
+<style lang="scss">
 	.debug {
 		position: fixed;
 		top: 4px;

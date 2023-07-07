@@ -17,7 +17,7 @@
 
 The digits in the scratch card will be roman - from one to nine.
 
-Think about Wheel of Luck! To add it after each level as another reward to the player, more virtual money for example, for purchasing new cards.
+_Think about Wheel of Luck! To add it after each level as another reward to the player, more virtual money for example, for purchasing new cards._
 
 ## Developing
 
