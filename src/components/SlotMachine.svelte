@@ -1,7 +1,7 @@
 <script>
     import { onMount, afterUpdate } from 'svelte';
   
-    let debugEl;
+    let debugElement;
     let iconMap = ["banana", "seven", "cherry", "plum", "orange", "bell", "bar", "lemon", "melon"];
     let icon_width = 79;
     let icon_height = 79;
@@ -32,14 +32,14 @@
     };
   
     const rollAll = () => {
-      debugEl.textContent = 'rolling...';
+      debugElement.textContent = 'rolling...';
   
       const reelsList = Array.from(document.querySelectorAll('.slots > .reel'));
   
       Promise.all(reelsList.map((reel, i) => roll(reel, i)))
         .then((deltas) => {
           deltas.forEach((delta, i) => (indexes[i] = (indexes[i] + delta) % num_icons));
-          debugEl.textContent = indexes.map((i) => iconMap[i]).join(' - ');
+          debugElement.textContent = indexes.map((i) => iconMap[i]).join(' - ');
   
           if (indexes[0] == indexes[1] || indexes[1] == indexes[2]) {
             const winCls = indexes[0] == indexes[2] ? 'win2' : 'win1';
@@ -52,12 +52,12 @@
     };
   
     onMount(() => {
-      debugEl = document.getElementById('debug');
+      debugElement = document.getElementById('debug');
       setTimeout(rollAll, 1000);
     });
   
     afterUpdate(() => {
-      debugEl.textContent = indexes.map((i) => iconMap[i]).join(' - ');
+      debugElement.textContent = indexes.map((i) => iconMap[i]).join(' - ');
     });
   </script>
 
